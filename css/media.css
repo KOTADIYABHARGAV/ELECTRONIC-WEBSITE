@@ -1,0 +1,161 @@
+/* at width 1450 to unlimited */
+@media screen and (max-width: 2560px) and (min-width: 1450px) {
+  /* header page */
+  .header {
+    height: 200px;
+  }
+  .container1 {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  .logo > img {
+    width: 90px;
+    height: 90px;
+    top: 5px;
+    position: relative;
+  }
+  .searchbar {
+    height: 100px;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .searchbar > input {
+    height: 70px;
+    width: 1000px;
+  }
+  .searchbar > input::placeholder {
+    font-size: 30px;
+  }
+  .searchbar > button > img {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+  }
+  .icon1 {
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .icon {
+    margin-bottom: 30px;
+  }
+  .icon > .a {
+    margin: 0px;
+  }
+  .icon > a > label {
+    font-size: 20px;
+  }
+  .icon > a > img {
+    height: 100px;
+    width: 50px;
+  }
+  /* navbar page */
+  ul {
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .container2 {
+    height: 100px;
+    top: 100px;
+    position: fixed;
+  }
+  ul > a > li {
+    font-size: 30px;
+  }
+
+  /* home page */
+  .container3 {
+    background: url(/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container3 > h1 {
+    font-size: 120px;
+  }
+  .container4 {
+    height: 400px;
+  }
+  .container4 > .persentage > h6 {
+    font-size: 150px;
+  }
+  .container4 > .persentage > span {
+    font-size: 30px;
+    margin-left: 400px;
+  }
+  .container4 > .end > span {
+    font-size: 100px;
+  }
+  .container4 > .reward > p {
+    font-size: 60px;
+  }
+  .container4 > .reward > span {
+    font-size: 20px;
+    margin-left: 300px;
+  }
+  /* categories page */
+  .con1 > .container5 > .categories > span {
+    position: relative;
+    left: 1100px;
+    font-size: 70px;
+    top: -10px;
+  }
+  .categories::after,
+  .categories::before {
+    width: 36%;
+  }
+  .img1 {
+    width: 400px;
+    height: 400px;
+  }
+  .img1 > img {
+    width: 300px;
+    height: 300px;
+  }
+  /* new arrivals */
+  .container6 > .img {
+    width: 1000px;
+    height: 400px;
+  }
+  .container6 > .img > img {
+    width: 1000px;
+    height: 400px;
+  }
+  /* brands */
+  .main > .container7 > .brand > span {
+    left: 1200px;
+    position: relative;
+  }
+  .brand::after,
+  .brand::before {
+    width: 36%;
+  }
+  /* blogs */
+  .h::after,
+  .h::before {
+    width: 36%;
+  }
+  .blogs > .container8 > .h > span {
+    left: 1200px;
+  }
+  /* contact */
+  .head::after,
+  .head::before {
+    width: 36%;
+  }
+  .contact > .container9 > .head > span{
+    left: 1150px;
+  }
+}

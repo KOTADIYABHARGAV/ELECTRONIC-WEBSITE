@@ -1,0 +1,476 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Header started */
+.header {
+  position: fixed;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  height: 105px;
+  width: 100%;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  top: 0;
+}
+.mainhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  margin-left: -60px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 15px;
+}
+.logo > a > img {
+  width: 50px;
+  height: 50px;
+  color: #dfe9f3;
+}
+.logo > a:hover {
+  color: antiquewhite;
+}
+.searchbar {
+  width: 35%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar > input {
+  width: 300px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: none;
+}
+.searchbar > input:focus {
+  outline: 0;
+}
+.searchbar > button {
+  border: 0px;
+  padding: 3.5px;
+  background-color: gray(70%);
+  color: #252525;
+  cursor: pointer;
+}
+.searchbar > button > img {
+  padding: 3.6px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.icon1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  position: relative;
+  right: 25px;
+}
+.icon1 > a {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.icon1 > a:hover {
+  filter: opacity(50%);
+}
+.icon1 > a > ion-icon {
+  display: flex;
+  align-items: center;
+  color: #252525;
+  width: 25px;
+  height: 25px;
+}
+.icon1 > a > label {
+  font-size: 10px;
+  color: black;
+}
+/* Header end */
+
+/* Navbar start */
+.menu {
+  height: 50px;
+  position: relative;
+  top: 55px;
+  width: 100%;
+  margin-left: -60px;
+}
+nav {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 55px;
+  z-index: 100;
+}
+
+nav > a {
+  position: relative;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+  padding: 5px;
+}
+nav > a::after {
+  content: "";
+  position: absolute;
+  background-color: darkgrey;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+nav > a:hover {
+  color: darkgray;
+  transition: 0.3s ease-in-out;
+}
+nav > a:hover::after {
+  width: 100%;
+}
+/* Navbar end */
+.Cpage {
+  height: 2530px;
+}
+.trending {
+  margin: 10px 0px 10px 0px;
+}
+.sidepanel > .trending {
+  display: block;
+  margin: 10px 0px 10px 0px;
+}
+.sidepanel > .trending > .TH > h6 {
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+.sidepanel > .trending > a {
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  margin: 10px 0px 10px 20px;
+  align-items: center;
+  padding: 2px;
+  display: flex;
+}
+.sidepanel > .trending > a:hover {
+  background: #000;
+  color: white;
+}
+.sidepanel {
+  height: 500px;
+  width: 200px;
+  top: 105px;
+  left: 0px;
+  position: fixed;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  box-shadow: 05px 0px 5px rgba(0, 0, 0, 0.15);
+  background: transparent;
+  z-index: 100;
+}
+.shop {
+  margin: 10px 0px 10px 0px;
+}
+.shop > .SH > h6 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+}
+.sidepanel > .shop > a {
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  margin: 10px 0px 10px 20px;
+  align-items: center;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.sidepanel > .shop > a:hover {
+  background: #000;
+  color: #fff;
+}
+.brands > .BH > h6 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+}
+.sidepanel > .brands > a {
+  text-transform: uppercase;
+  font-size: 15 px;
+  text-decoration: none;
+  color: black;
+  margin: 10px 0px 10px 20px;
+  align-items: center;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.sidepanel > .brands > a:hover {
+  background: #000;
+  color: white;
+}
+.grid-container {
+  display: grid;
+  gap: 50px 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #dfe9f3;  
+  position: relative;
+  top: 110px;
+  left: 160px;
+  width: 1000px;
+  height: 300px;
+}
+hr {
+  position: relative;
+  width: 1000px;
+  left: 100px;
+  top: 110px;
+}
+.grid-item {
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10%;
+  padding: 10px;
+  text-align: center;
+  width: 270px;
+  height: 270px;
+  transition: 0.5s;
+}
+.grid-item:hover {
+  box-shadow: 0px 0px 10px #3d3d3d;
+}
+/*ZoomIn Hover Effect*/
+.hover-zoomin a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.hover-zoomin img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.hover-zoomin:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.grid-container > .grid-item > .col-xs-6 > a {
+  color: black;
+  text-decoration: none;
+  width: 250px;
+  display: inline-block;
+  height: 250px;
+  font-size: 20px;
+}
+.grid-container > .grid-item > .col-xs-6 > a > img {
+  width: 250px;
+  height: 200px;
+}
+.Bh {
+  display: flex;
+  justify-content: center;
+  width: 1025px;
+  position: relative;
+  left: 160px;
+  top: 110px;
+  margin: 20px 0px 20px 0px;
+}
+.Bh > h5 {
+  margin: 0px;
+  font-size: 35px;
+  font-weight: 900;
+}
+/* Page over */
+.offer {
+  height: 200px;
+  background: linear-gradient(to right, #eff5f5, #d6e4e5);
+  width: 1000px;
+  position: relative;
+  left: 232px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.offer > .p > p {
+  margin: 20px 0px 20px 0px;
+  font-size: 30px;
+  font-family: "Times New Roman";
+}
+.offer > .p > span {
+  padding: 10px 0px 10px 0px;
+  margin-left: 95px;
+  font-size: 15px;
+}
+.offer > img {
+  height: 200px;
+}
+/* Footer start */
+.footer {
+  background: #3d3d3d;
+  height: 385px;
+  width: 1000px;
+  position: relative;
+  left: 232px;
+}
+.he > h5 {
+  color: white;
+  margin: 5px;
+  font-size: 20px;
+}
+.upfooter {
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.product1 {
+  width: 235px;
+}
+.dt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dt > span {
+  margin: 5px 0px 5px 5px;
+}
+.dt > span > a {
+  text-decoration: none;
+  width: auto;
+  color: white;
+}
+.dt > span > a:hover {
+  color: aqua;
+}
+.Q1 {
+  width: 235px;
+}
+.quicklink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.address > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.address > a > ion-icon {
+  color: white;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.address > a > p {
+  color: white;
+}
+.address > a > p:hover {
+  color: aqua;
+}
+.newsletter {
+  display: flex;
+  justify-content: space-around;
+  width: 980px;
+}
+.ne > h3 {
+  color: white;
+  margin: 0px;
+}
+.input {
+  display: flex;
+  align-items: center;
+}
+.input > input {
+  background: #eff5f5;
+  padding: 10px;
+  border: 0px;
+  width: 400px;
+  opacity: 0.7;
+  transition: all 0.5s ease-in;
+  box-shadow: inset 2px 2px 4px #d6e4e5, inset -2px -2px 4px #eff5f5;
+}
+.input > input:focus {
+  outline: 0px;
+  box-shadow: inset 4px 4px 4px #d6e4e5, inset -4px -4px 4px #eff5f5;
+  opacity: 1;
+}
+.input > button > ion-icon {
+  height: 20px;
+  margin-top: 5px;
+  width: 20px;
+}
+.input > button {
+  padding: 3.5px;
+  border: 0;
+  background-color: #eff5f5;
+  opacity: 0.7;
+}
+.input > button:focus {
+  color: white;
+  opacity: 1;
+  background-color: green;
+}
+.newsletter > .left > p {
+  color: white;
+  margin: 0px;
+}
+.downfooter {
+  display: flex;
+  justify-content: center;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.right > h4 {
+  margin-right: 10px;
+  color: white;
+}
+.right > h2 {
+  margin-right: 10px;
+  color: white;
+}
+.right > ion-icon {
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+.right > ion-icon:hover {
+  color: aqua;
+  transition: 0.3s ease-in-out;
+}

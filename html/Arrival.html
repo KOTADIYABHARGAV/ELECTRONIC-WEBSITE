@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GE Arrival</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="/css/arrival.css">
+    <link rel="icon" type="image/x-icon" href="/img/Asset 1.png">
+</head>
+
+<body>
+    <!-- Header main logo & searchbar & Profile -->
+    <div class="header">
+        <div class="container">
+            <div class="mainhead">
+                <div class="logo" id="logo">
+                    <a href="#"><img src="/img/Asset 1.png" alt=""></a>
+                </div>
+                <div class="searchbar">
+                    <input type="search" name="search" id="search" placeholder="Search here !"><button
+                        type="submit"><img src="/img/search.png"></button>
+                </div>
+                <div class="icon1">
+                    <a href="#">
+                        <ion-icon name="pin"></ion-icon>
+                        <label for="address">Address</label>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="cart"></ion-icon>
+                        <label for="cart">Cart</label>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="star"></ion-icon>
+                        <label for="wishlist">Favorite</label>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="contact"></ion-icon>
+                        <label for="profile">Profile</label>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Header over -->
+        <!-- Menu list -->
+        <div class="menu">
+            <div class="container">
+                <nav>
+                    <a href="/html/index.html">Home</a>
+                    <a href="/html/Categories.html">Categories</a>
+                    <a href="/html/Arrival.html">New arrivals</a>
+                    <a href="/html/Blogs.html">Blogs</a>
+                    <a href="/html/contact.html">Contact</a>
+                    <a href="/html/About-us.html">About us</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Menu list / header over -->
+    <!-- Slider page start -->
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="/img/vivophone new arrival.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="/img/canon new arrival.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="/img/hp new arrival.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="/img/boat new arrival.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="/img/Smartwatch new arrival.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="/img/oneplus new arrival.jpg" style="width:100%;">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption">New Arrival</p>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <!-- Slider page over -->
+    <!-- detail page start -->
+    <div class="hr">
+        <hr>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="#">
+                <img src="/img/realme mobile.png">
+            </a>
+            <div class="card-body">
+                <h1 class="card-title">REALME 10 PRO</h1>
+                <p class="card-sub-title">Snapdragon(tm)695 5G Chipset</p>
+                <p class="card-info">Storage : 6GB/8GB + 128GB<br> Display : 120Hz Boundless Display
+                    1mm Ultra-slim Side Bezels <br>Battery : 5000mAh (Typical) Massive Battery <br>Operating System :
+                    realme UI 4.0 Based on Android 13</p>
+                <button class="card-button">See more</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <img src="/img/refrigerator-whirpool.png">
+            </a>
+            <div class="card-body">
+                <h1 class="card-title">WHIRPOOL REFRIGERATOR</h1>
+                <p class="card-sub-title">Intellifresh 340L Double </p>
+                <p class="card-info">AI technology<br>5 in 1 convertible freezer modes <br>Intellifresh inverter
+                    technology<br>zeolite technology to prevent excessive ripening</p>
+                <button class="card-button">See more</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <img src="/img/samsung-4k.png">
+            </a>
+            <div class="card-body">
+                <h1 class="card-title">NEO QLED 4K</h1>
+                <p class="card-sub-title">1m 63cm(65")</p>
+                <p class="card-info">Quantum matrix technology<br> Infinity one design neural quantum processor<br>
+                    Doulby Atmos® </p>
+                <button class="card-button">See more</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <img src="/img/ipad.png">
+            </a>
+            <div class="card-body">
+                <h1 class="card-title">IPAD (10TH GEN)</h1>
+                <p class="card-sub-title">4 GB LPDDR4X SDRAM</p>
+                <p class="card-info">Storage : 64GB or 256<br> Display : 10.9 inches(280mm)<br>power : 28.6 w.h up to
+                    10hr of battery life <br>Graphics : Apple-designed quad core <br>
+                    sound : Stereo</p>
+                <button class="card-button">See more</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <img src="/img/boat-watch.png">
+            </a>
+            <div class="card-body">
+                <h1 class="card-title">BOAT STORM PRO</h1>
+                <p class="card-sub-title">Bluetooth Calling Smartwatch</p>
+                <p class="card-info">Screen Type : 4.52 cm Amoled Display <br>IP68 dust & water resistance <br>Battery
+                    Capacity :
+                    230 mAh <br>Bluetooth Version :
+                    V 5.0</p>
+                <button class="card-button">See more</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <img src="/img/hometheater phillips.png">
+            </a>
+            <div class="card-body">
+                <h1 class="card-title">PHILIPS SPEAKER</h1>
+                <p class="card-sub-title">Music, Movies & Entertainment</p>
+                <p class="card-info">Accessories : Remote Control with QWERTY,
+                    User Manual,
+                    Warranty Card,
+                    2 RCA to stereo-1 no. cable.<br>The technology allows easy wireless connection to other Bluetooth
+                    devices, so you can play your favorite music from any smartphones, tablets or even laptops including
+                    iPod or iPhone on Bluetooth-enabled speaker easily.</p>
+                <button class="card-button">See more</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <img src="/img/latitude-3520-laptop.png">
+            </a>
+            <div class="card-body">
+                <h1 class="card-title">LATITUDE 3520 LAPTOP</h1>
+                <p class="card-sub-title">Windows 11 Pro, English</p>
+                <p class="card-info">16 GB, 2 x 8 GB, DDR4, 3200 MT/s <br>
+                    256 GB, M.2, PCIe NVMe, SSD, Class 35 <br>
+                    Display : CY22 15.6" FHD (1920 x 1080) AG Non-Touch, 250nits, Camera w/shutter & Microphone, WLAN
+                    Capable</p>
+                <button class="card-button">See more</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <img src="/img/IFB-washing-machine.png">
+            </a>
+            <div class="card-body">
+                <h1 class="card-title">TL - S4RBS 12 KG AQUA</h1>
+                <p class="card-sub-title">12 KG AQUA | 720 RPM |
+                    Top Load Washing Machine</p>
+                <p class="card-info">Dimensions (W x D x H - mm)620 x 640 x 1030<br>Warranty4 Years Super Warranty + 10
+                    Years Spare Parts Support + 10 Years Motor Warranty<br>Inner TubStainless Steel
+                <p>
+                    <button class="card-button">See more</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <img src="/img/printer.png">
+            </a>
+            <div class="card-body">
+                <h1 class="card-title">IMAGECLASS MF441DW</h1>
+                <p class="card-sub-title">Redefine Reliability with the 3-in-1 Monochrome Multifunction</p>
+                <p class="card-info">Print, Scan, Copy <br> Print speed: Up to 33 (pages/minute) ppm (A4) <br> Max.
+                    paper input capacity: Up to 900 sheets <br> Print resolution: Up to 1200 x 1200 dpi (equivalent)</p>
+                <button class="card-button">See more</button>
+            </div>
+        </div>
+    </div>
+    <!-- details page over -->
+    <!-- Footer start-->
+    <div class="footer">
+        <div class="container">
+            <div class="upfooter">
+                <div class="product1">
+                    <div class="he">
+                        <h5>Products</h5>
+                    </div>
+                    <div class="dt">
+                        <span><a href="#">Mobiles</a></span>
+                        <span><a href="#">Television</a></span>
+                        <span><a href="#">Refrigerator</a></span>
+                        <span><a href="#">Laptop</a></span>
+                        <span><a href="#">Dj & Sound</a></span>
+                        <span><a href="#">Camera</a></span>
+                        <span><a href="#">Home appliences</a></span>
+                        <span><a href="#">All accessories</a></span>
+                    </div>
+                </div>
+                <div class="Q1">
+                    <div class="he">
+                        <h5>Quick-links</h5>
+                    </div>
+                    <div class="dt">
+                        <span><a href="#">About Us</a></span>
+                        <span><a href="#">Contact Us</a></span>
+                        <span><a href="#">Help</a></span>
+                        <span><a href="#">FAQ's</a></span>
+                        <span><a href="#">Privacy policy</a></span>
+                        <span><a href="#">Term's of use</a></span>
+                    </div>
+                </div>
+                <div class="Q1">
+                    <div class="he">
+                        <h5>Get in Touch</h5>
+                    </div>
+                    <div class="address">
+                        <ion-icon name="navigate"></ion-icon>
+                        <p>123, gokuldham soc., Mumbai. - 400001</p>
+                    </div>
+                    <div class="address">
+                        <ion-icon name="phone-portrait"></ion-icon>
+                        <p>+91 8912516557</p>
+                    </div>
+                    <div class="address">
+                        <ion-icon name="call"></ion-icon>
+                        <p>(022) 67891026</p>
+                    </div>
+                    <div class="address">
+                        <ion-icon name="mail"></ion-icon>
+                        <p>Info@gadaelectronics.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter">
+                <div class="left">
+                    <div class="ne">
+                        <h3>Newsletter</h3>
+                    </div>
+                    <div class="input">
+                        <input type="email" name="email" placeholder="Enter your e-mail">
+                        <button type="submit"><ion-icon name="send"></ion-icon></button>
+                    </div>
+                    <p>Free Delivery on your first order!</p>
+                </div>
+                <div class="right">
+                    <h4>FOLLOW US</h4>
+                    <h2>|</h2>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-googleplus"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </div>
+            </div>
+            <hr>
+            <div class="downfooter">
+                <p>© 2023 Gada Electronics. All rights are reserved | design by BK.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer end-->
+</body>
+
+</html>
